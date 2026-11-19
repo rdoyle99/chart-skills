@@ -1,0 +1,64 @@
+{
+ "skill": "label-and-annotate-a-chart",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 1.0,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Gives a title that states the finding",
+     "pass": true,
+     "reason": "Title is 'Rent takes 60 percent of the monthly budget', which states the finding, and the topic moves to the subtitle."
+    },
+    {
+     "assertion": "Recommends direct labels or a placed legend",
+     "pass": true,
+     "reason": "It removes the legend and recommends direct slice labels such as 'Rent, 60%'."
+    },
+    {
+     "assertion": "Adds a unit",
+     "pass": true,
+     "reason": "The subtitle reads 'Share of monthly spending, percent', and the labels carry % signs."
+    },
+    {
+     "assertion": "Adds a source line with a date or asks for one",
+     "pass": true,
+     "reason": "It adds a source line with a [month and year] placeholder and tells the user to fill in the real source and date before publishing."
+    }
+   ],
+   "answer_chars": 2096
+  },
+  {
+   "id": 2,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Suggests grouping the small slices into Other or moving labels outside",
+     "pass": true,
+     "reason": "Option A groups the three small slices into 'Other, 5%', and Option B moves their labels outside the pie."
+    },
+    {
+     "assertion": "Mentions leader lines or outside labels",
+     "pass": true,
+     "reason": "Option B explicitly says to put slices under 3% outside the pie with leader lines."
+    },
+    {
+     "assertion": "Keeps the percents totaling 100 after grouping",
+     "pass": true,
+     "reason": "The 2%, 2% and 1% slices merge into 'Other, 5%', which is the correct sum, so the total stays 100. The answer never says outright that the total remains 100."
+    },
+    {
+     "assertion": "Mentions what to do if the user needs each small slice named",
+     "pass": true,
+     "reason": "Option A says to name the three in a footnote, such as 'Other = Tea 2%, Water 2%, Misc 1%'. Option B keeps all three labeled outside with leader lines."
+    }
+   ],
+   "answer_chars": 2546
+  }
+ ]
+}

@@ -1,0 +1,64 @@
+{
+ "skill": "charts-for-slides",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 1.0,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Recommends one format with a reason",
+     "pass": true,
+     "reason": "Recommends PNG as the single format and gives reasons (crisp text and lines, works in every PowerPoint version, SVG compatibility risk)."
+    },
+    {
+     "assertion": "States a pixel size or a 2x rule",
+     "pass": true,
+     "reason": "States 2880 \u00d7 1620 px and the rule to export at 2\u00d7 the displayed size, with a 1920 px example."
+    },
+    {
+     "assertion": "Mentions a minimum label size of at least 14 pt",
+     "pass": true,
+     "reason": "Says labels should be 14 pt or larger after placement."
+    },
+    {
+     "assertion": "Gives PowerPoint insert steps",
+     "pass": true,
+     "reason": "Gives numbered steps: Insert > Pictures > This Device, then Size and Position with aspect ratio locked."
+    }
+   ],
+   "answer_chars": 2241
+  },
+  {
+   "id": 2,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Diagnoses low pixel size as the cause",
+     "pass": true,
+     "reason": "It explains that a PNG is a fixed pixel grid that goes soft when stretched, and it says a 400 px export will blur. That names low pixel size as the cause."
+    },
+    {
+     "assertion": "Suggests exporting larger or as SVG",
+     "pass": true,
+     "reason": "It recommends SVG, or a PNG re-exported at about 1920 px wide (2x)."
+    },
+    {
+     "assertion": "Tells the user not to stretch the image",
+     "pass": true,
+     "reason": "It says to stop resizing by hand and not to enlarge a small PNG, and to re-export it instead."
+    },
+    {
+     "assertion": "Mentions Google Slides insert steps",
+     "pass": true,
+     "reason": "It gives numbered steps: Insert, Image, Upload from computer, then Shift-drag a corner handle."
+    }
+   ],
+   "answer_chars": 2283
+  }
+ ]
+}

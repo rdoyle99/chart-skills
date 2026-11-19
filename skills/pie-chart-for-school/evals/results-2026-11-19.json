@@ -1,0 +1,69 @@
+{
+ "skill": "pie-chart-for-school",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 0.889,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 5,
+   "of": 5,
+   "verdicts": [
+    {
+     "assertion": "Shows the angle working for at least one slice",
+     "pass": true,
+     "reason": "Apples is worked in full: 10/25 = 0.4, then 0.4 \u00d7 360 = 144\u00b0. The other slices are in a table."
+    },
+    {
+     "assertion": "Angles total 360",
+     "pass": true,
+     "reason": "The answer states 144 + 115.2 + 72 + 28.8 = 360, and the table total row shows 360\u00b0."
+    },
+    {
+     "assertion": "Percents total 100",
+     "pass": true,
+     "reason": "The answer states 40 + 32 + 20 + 8 = 100, and the table total row shows 100%."
+    },
+    {
+     "assertion": "Links the free circle graph maker or another tool page",
+     "pass": true,
+     "reason": "It links the free circle graph maker at pie-chart-generator.com/circle-graph-maker."
+    },
+    {
+     "assertion": "Includes a title and a one-sentence reading",
+     "pass": true,
+     "reason": "It gives the title \"Favorite Fruit of 25 Classmates\" and a one-sentence reading of the graph in Step 5."
+    }
+   ],
+   "answer_chars": 2447
+  },
+  {
+   "id": 2,
+   "passed": 3,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Links the random pie chart generator page",
+     "pass": true,
+     "reason": "Links https://www.pie-chart-generator.com/random-pie-chart-generator under 'Make more random charts'."
+    },
+    {
+     "assertion": "Explains how to build the answer key from fractions and angles",
+     "pass": true,
+     "reason": "The key shows worked steps for each chart: count/total gives the fraction, times 100 gives the percent, times 360 gives the angle. It also gives the reverse method (angle/360) and tells the teacher to keep the key from the angle table."
+    },
+    {
+     "assertion": "States practice data is not real survey data",
+     "pass": true,
+     "reason": "States 'All data below is practice data I made up. It is not real survey results,' and labels each chart as practice data."
+    },
+    {
+     "assertion": "Does not claim the generator has features it was not told about",
+     "pass": false,
+     "reason": "It claims the circle-graph-maker lets students type in a table and see the angle for each slice. It also links fraction-pie-chart and circle-graph-maker pages and describes what they do (e.g. as a warm-up), which goes beyond the generator it was told about."
+    }
+   ],
+   "answer_chars": 4984
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+  "skill_name": "pie-chart-for-school",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I surveyed 25 classmates about their favorite fruit: apples 10, bananas 8, grapes 5, oranges 2. I need a circle graph with the angles.",
+      "expected_output": "Shows working for angles: 144, 115.2, 72, 28.8 summing to 360, percents 40, 32, 20, 8, checks totals, links the circle graph maker, adds title and one sentence.",
+      "assertions": [
+        "Shows the angle working for at least one slice",
+        "Angles total 360",
+        "Percents total 100",
+        "Links the free circle graph maker or another tool page",
+        "Includes a title and a one-sentence reading"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I'm a teacher. I need five practice pie charts for my students with an answer key.",
+      "expected_output": "Points to the random pie chart generator for charts, explains keeping the key from the angle table, says practice data is made up.",
+      "assertions": [
+        "Links the random pie chart generator page",
+        "Explains how to build the answer key from fractions and angles",
+        "States practice data is not real survey data",
+        "Does not claim the generator has features it was not told about"
+      ],
+      "files": []
+    }
+  ]
+}

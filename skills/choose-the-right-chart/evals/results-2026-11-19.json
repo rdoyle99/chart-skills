@@ -1,0 +1,64 @@
+{
+ "skill": "choose-the-right-chart",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 1.0,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Gives one recommended chart type, not a menu",
+     "pass": true,
+     "reason": "It opens with \"Use a pie chart\" and picks it clearly. The doughnut is described as the same chart with a hole, and the other types are rejected."
+    },
+    {
+     "assertion": "States the reason using the parts-of-a-whole shape or the slice count",
+     "pass": true,
+     "reason": "It says the four expenses are parts of one monthly total that adds to 100%, and that four slices is under the comfortable limit of five."
+    },
+    {
+     "assertion": "Mentions at least one rejected alternative with a reason",
+     "pass": true,
+     "reason": "It rejects bar (adds nothing the pie doesn't show faster for four parts of a whole), line (no time axis) and 3D (distorts slice size), each with a reason."
+    },
+    {
+     "assertion": "Names a sibling skill such as make-a-pie-chart-with-percentages as the next step",
+     "pass": true,
+     "reason": "The last line names `make-a-pie-chart-with-percentages` as the build step, followed by `pick-chart-colors` and `label-and-annotate-a-chart`."
+    }
+   ],
+   "answer_chars": 1733
+  },
+  {
+   "id": 2,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Rejects a pie chart",
+     "pass": true,
+     "reason": "Opens with 'Use a line chart, not a pie' and lists pie/doughnut under what it rejected."
+    },
+    {
+     "assertion": "Says the data is over time or has too many slices",
+     "pass": true,
+     "reason": "Says the data is change over time and that 12 slices is too many for a pie."
+    },
+    {
+     "assertion": "Recommends a line graph or a bar chart",
+     "pass": true,
+     "reason": "Recommends a line chart as the main choice and a bar chart with months in order as an alternative."
+    },
+    {
+     "assertion": "Does not recommend a 3D chart",
+     "pass": true,
+     "reason": "No 3D chart is mentioned or recommended anywhere in the answer."
+    }
+   ],
+   "answer_chars": 1586
+  }
+ ]
+}

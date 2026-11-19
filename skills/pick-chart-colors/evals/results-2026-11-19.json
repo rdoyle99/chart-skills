@@ -1,0 +1,64 @@
+{
+ "skill": "pick-chart-colors",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 0.75,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 3,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Provides five hex color codes",
+     "pass": true,
+     "reason": "Lists five hex codes: #0072B2, #E69F00, #009E73, #56B4E9, #CC79A7."
+    },
+    {
+     "assertion": "Uses a colorblind-safe palette and names it or its source",
+     "pass": true,
+     "reason": "Names the Okabe and Ito colorblind-safe palette and notes the one swap (pink for yellow)."
+    },
+    {
+     "assertion": "Specifies label text color or contrast for the slices",
+     "pass": true,
+     "reason": "The table gives a label text color for each slice (white on blue, near-black #111111 on the rest) and the checks discuss contrast."
+    },
+    {
+     "assertion": "Mentions that color should not be the only way to separate slices",
+     "pass": false,
+     "reason": "It suggests white borders and neighbor lightness differences, but never says color shouldn't be the sole separator or recommends direct labels, patterns or other non-color cues."
+    }
+   ],
+   "answer_chars": 1531
+  },
+  {
+   "id": 2,
+   "passed": 3,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Raises that the brand colors may turn into similar grays",
+     "pass": false,
+     "reason": "The answer says the brand colors already land on different grays and stay apart, so it never warns they might print as similar grays. It only hedges that slices 3 and 4 could look close."
+    },
+    {
+     "assertion": "Recommends direct labels or patterns in addition to color",
+     "pass": true,
+     "reason": "Print rules say to label each slice directly with its name and value instead of a legend so the chart reads without color."
+    },
+    {
+     "assertion": "Provides hex values for four slices",
+     "pass": true,
+     "reason": "The table gives four hex fills: #1F4E79, #DEEBF7, #787878 and #F2A900."
+    },
+    {
+     "assertion": "Mentions a grayscale check",
+     "pass": true,
+     "reason": "Check #1 is a grayscale check, with a recommended test print on the actual printer and a note that the grays are calculated, not measured."
+    }
+   ],
+   "answer_chars": 2307
+  }
+ ]
+}

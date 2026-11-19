@@ -1,0 +1,29 @@
+{
+  "skill_name": "pick-chart-colors",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Give me colors for a 5-slice pie chart that a colorblind reader can tell apart. It will go on a slide with a white background.",
+      "expected_output": "Gives five hex colors from the colorblind-safe set in an order, with label colors and a check.",
+      "assertions": [
+        "Provides five hex color codes",
+        "Uses a colorblind-safe palette and names it or its source",
+        "Specifies label text color or contrast for the slices",
+        "Mentions that color should not be the only way to separate slices"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Our handout is printed in black and white. Our brand colors are #1F4E79 and #F2A900. We have 4 categories.",
+      "expected_output": "Warns brand colors may print as similar grays, suggests distinct grays or labels, uses the brand colors where they differ in lightness.",
+      "assertions": [
+        "Raises that the brand colors may turn into similar grays",
+        "Recommends direct labels or patterns in addition to color",
+        "Provides hex values for four slices",
+        "Mentions a grayscale check"
+      ],
+      "files": []
+    }
+  ]
+}

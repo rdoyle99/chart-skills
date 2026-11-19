@@ -1,0 +1,29 @@
+{
+  "skill_name": "cite-chart-statistics",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I want to say in my report that most pie charts have 5 slices or fewer. Can I cite pie-chart-generator.com?",
+      "expected_output": "Cites 78.6% six or fewer / median 5, dated through 2026-11-18, with the page, and says it is one site's downloads, not all charts.",
+      "assertions": [
+        "Gives a figure with the date 2026-11-18 or the window",
+        "Names the source page",
+        "States that it counts one tool's downloads and not all chart use",
+        "Does not describe it as an industry-wide figure"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Write a source line for my chart of a survey I ran of 40 students in April 2026.",
+      "expected_output": "Source: student survey, April 2026, n = 40; asks who collected it and how if unknown.",
+      "assertions": [
+        "Includes n = 40",
+        "Includes April 2026",
+        "Names the collection method or asks for it",
+        "Puts the line under the chart"
+      ],
+      "files": []
+    }
+  ]
+}

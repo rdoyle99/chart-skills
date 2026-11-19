@@ -1,0 +1,29 @@
+{
+  "skill_name": "chart-from-a-spreadsheet",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a Google Sheet with columns Category and Amount, a blank row, and a Total row at the bottom. How do I make a pie chart?",
+      "expected_output": "Tells the user to remove the blank row and exclude the Total row, gives the range, and gives Google Sheets steps including percentage labels.",
+      "assertions": [
+        "Tells the user to exclude the Total row from the chart range",
+        "Tells the user to remove blank rows",
+        "Gives Google Sheets menu steps",
+        "Mentions showing the slice label as percentage"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Here are my cells: Rent\t$1,200\nFood\t$450\nFun\t$200. Turn them into something I can paste into a chart tool.",
+      "expected_output": "Returns a cleaned block with plain numbers, no currency symbols, tab-separated, and links the free editor.",
+      "assertions": [
+        "Output numbers have no dollar signs or commas",
+        "Output is two tab-separated columns",
+        "Links a free chart tool page",
+        "States that percents will be calculated from the total"
+      ],
+      "files": []
+    }
+  ]
+}

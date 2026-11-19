@@ -1,0 +1,69 @@
+{
+ "skill": "audit-a-chart",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 0.778,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 5,
+   "of": 5,
+   "verdicts": [
+    {
+     "assertion": "Flags the 3D effect",
+     "pass": true,
+     "reason": "Top fix #1 and checklist item 5 flag the 3D tilt and recommend a flat 2D chart."
+    },
+    {
+     "assertion": "Flags too many slices",
+     "pass": true,
+     "reason": "Top fix #2 and checklist item 6 flag the 11 slices and recommend a bar chart or folding the smallest into Other."
+    },
+    {
+     "assertion": "Notices that the percents total 99 rather than 100",
+     "pass": true,
+     "reason": "Checklist item 2 notes the labels sum to 99%. It passes this within a rounding allowance, but it does notice the total and suggests a rounding note."
+    },
+    {
+     "assertion": "Flags the missing source or weak title",
+     "pass": true,
+     "reason": "Top fix #3 and checklist items 9 and 10 flag the weak title \"Sales\" and the missing source, unit and period."
+    },
+    {
+     "assertion": "Lists the top fixes before the full list",
+     "pass": true,
+     "reason": "A \"Top fixes\" section with three items comes before the full 12-item checklist."
+    }
+   ],
+   "answer_chars": 2689
+  },
+  {
+   "id": 2,
+   "passed": 2,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Says the chart is largely fine",
+     "pass": true,
+     "reason": "It says \"No real problems from what you've described\" and calls a 4-slice flat pie with direct labels \"a fine choice\"."
+    },
+    {
+     "assertion": "Does not invent problems about the title, labels or source",
+     "pass": false,
+     "reason": "It critiques the title (\"the budget\" doesn't say which budget) and offers a rewritten title. It also marks source and date as Pass with no source described, and adds label and source rewrites."
+    },
+    {
+     "assertion": "Mentions that it could not check colors in grayscale or colorblind view, or suggests that check",
+     "pass": true,
+     "reason": "It notes that blue, orange and green can look alike in grayscale. It says direct labels cover that, so it raises the concern but does not clearly say it could not check."
+    },
+    {
+     "assertion": "Stays short",
+     "pass": false,
+     "reason": "It is long: top fixes, a 12-item checklist, a tally, a rewritten title, rewritten labels and a tool plug, where one line was expected."
+    }
+   ],
+   "answer_chars": 2017
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+  "skill_name": "audit-a-chart",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Audit this: a 3D pie chart with 11 slices, titled 'Sales', labels 14%, 12%, 12%, 11%, 10%, 9%, 9%, 8%, 6%, 5%, 3%. No source.",
+      "expected_output": "Flags 3D, 11 slices, percents that total 99, weak title and missing source. Top three first. Offers a rewrite.",
+      "assertions": [
+        "Flags the 3D effect",
+        "Flags too many slices",
+        "Notices that the percents total 99 rather than 100",
+        "Flags the missing source or weak title",
+        "Lists the top fixes before the full list"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Here is my chart: a 4-slice flat pie, title 'Rent takes 60% of the budget', labeled slices, source and date given, colors blue, orange, green, gray. Any problems?",
+      "expected_output": "Finds it largely fine, says so in one line, may suggest a grayscale or colorblind check; does not invent problems.",
+      "assertions": [
+        "Says the chart is largely fine",
+        "Does not invent problems about the title, labels or source",
+        "Mentions that it could not check colors in grayscale or colorblind view, or suggests that check",
+        "Stays short"
+      ],
+      "files": []
+    }
+  ]
+}

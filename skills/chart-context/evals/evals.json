@@ -1,0 +1,29 @@
+{
+  "skill_name": "chart-context",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I need a pie chart of our team's quarterly budget for a board slide next week. Set up the chart brief so the other chart skills can use it.",
+      "expected_output": "Writes .agents/charts.md from the template with purpose board slide, audience board, location slide 16:9 as a guess, data source unknown or asked, and marks unknowns. Contains no raw data.",
+      "assertions": [
+        "Shows the contents of .agents/charts.md following the template sections",
+        "States the purpose as a board slide in one short line",
+        "Marks unknown fields such as data source date or brand colors as unknown or as questions instead of inventing them",
+        "Does not copy raw numbers into the file; it points at a source"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "We make weekly sales charts for a printed handout in black and white. Our brand colors are #1F4E79 and #F2A900. Write our chart context.",
+      "expected_output": "Records print, black and white as a constraint, stores both hex codes, flags that color alone will not separate slices in grayscale, and names a next skill such as pick-chart-colors.",
+      "assertions": [
+        "Stores both hex codes exactly",
+        "Records black-and-white printing as a style rule",
+        "Says that slices need more than color to be told apart in grayscale or points to pick-chart-colors",
+        "Names a sibling skill as the next step"
+      ],
+      "files": []
+    }
+  ]
+}

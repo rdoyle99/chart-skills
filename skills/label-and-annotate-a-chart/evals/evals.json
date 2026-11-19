@@ -1,0 +1,29 @@
+{
+  "skill_name": "label-and-annotate-a-chart",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "My pie chart is titled 'Monthly budget' with a legend at the bottom. Rent is 60%, food 22%, fun 10%, transport 8%. Fix the labels.",
+      "expected_output": "Rewrites the title as a finding, suggests direct labels, a unit, a dated source line, and one annotation.",
+      "assertions": [
+        "Gives a title that states the finding",
+        "Recommends direct labels or a placed legend",
+        "Adds a unit",
+        "Adds a source line with a date or asks for one"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Three of my slices are 2%, 2% and 1% and the labels overlap.",
+      "expected_output": "Suggests grouping into Other or moving labels outside with leader lines; says slices under 3 percent are unreadable.",
+      "assertions": [
+        "Suggests grouping the small slices into Other or moving labels outside",
+        "Mentions leader lines or outside labels",
+        "Keeps the percents totaling 100 after grouping",
+        "Mentions what to do if the user needs each small slice named"
+      ],
+      "files": []
+    }
+  ]
+}

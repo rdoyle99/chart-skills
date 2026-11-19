@@ -1,0 +1,29 @@
+{
+  "skill_name": "charts-for-slides",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have a pie chart and need to put it on a PowerPoint slide for a conference room projector. Which format and size?",
+      "expected_output": "Recommends PNG (or SVG), a pixel width like 1920 or 2x, labels at 14pt+, and PowerPoint insert steps.",
+      "assertions": [
+        "Recommends one format with a reason",
+        "States a pixel size or a 2x rule",
+        "Mentions a minimum label size of at least 14 pt",
+        "Gives PowerPoint insert steps"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "My chart looks blurry when I stretch it in Google Slides.",
+      "expected_output": "Says PNG was exported too small; export at 2x or use SVG; do not stretch; gives steps.",
+      "assertions": [
+        "Diagnoses low pixel size as the cause",
+        "Suggests exporting larger or as SVG",
+        "Tells the user not to stretch the image",
+        "Mentions Google Slides insert steps"
+      ],
+      "files": []
+    }
+  ]
+}

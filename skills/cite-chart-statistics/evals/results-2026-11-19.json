@@ -1,0 +1,64 @@
+{
+ "skill": "cite-chart-statistics",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 1.0,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Gives a figure with the date 2026-11-18 or the window",
+     "pass": true,
+     "reason": "Gives 78.6% (six slices or fewer, 15,741 of 20,031) and says the data runs through 2026-11-18."
+    },
+    {
+     "assertion": "Names the source page",
+     "pass": true,
+     "reason": "The source line names pie-chart-generator.com/pie-chart-statistics."
+    },
+    {
+     "assertion": "States that it counts one tool's downloads and not all chart use",
+     "pass": true,
+     "reason": "Says the figures count charts downloaded from one free chart tool and don't cover all pie charts. Also tells the user to state this in the text."
+    },
+    {
+     "assertion": "Does not describe it as an industry-wide figure",
+     "pass": true,
+     "reason": "Rejects the 'most pie charts' wording and says the figures come from one tool's downloads, not the industry."
+    }
+   ],
+   "answer_chars": 1695
+  },
+  {
+   "id": 2,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Includes n = 40",
+     "pass": true,
+     "reason": "The source line states 'n = 40'."
+    },
+    {
+     "assertion": "Includes April 2026",
+     "pass": true,
+     "reason": "The source line includes 'April 2026'."
+    },
+    {
+     "assertion": "Names the collection method or asks for it",
+     "pass": true,
+     "reason": "It names the method as a student survey. It also asks who collected it by prompting the user to replace the bracket with the collector's name, and it suggests adding the school or class."
+    },
+    {
+     "assertion": "Puts the line under the chart",
+     "pass": true,
+     "reason": "The Placement bullet says to put the line under the chart."
+    }
+   ],
+   "answer_chars": 752
+  }
+ ]
+}

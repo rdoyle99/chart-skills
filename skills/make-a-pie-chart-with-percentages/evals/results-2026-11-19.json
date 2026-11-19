@@ -1,0 +1,69 @@
+{
+ "skill": "make-a-pie-chart-with-percentages",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 1.0,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 5,
+   "of": 5,
+   "verdicts": [
+    {
+     "assertion": "States the total as 33",
+     "pass": true,
+     "reason": "It says 12 + 9 + 9 + 3 = 33 hours per week and shows 33 in the table."
+    },
+    {
+     "assertion": "Printed percent labels total exactly 100",
+     "pass": true,
+     "reason": "The labels 37, 27, 27 and 9 sum to 100. The largest remainder method is applied correctly, with the extra point going to Math."
+    },
+    {
+     "assertion": "Gives degrees that total 360",
+     "pass": true,
+     "reason": "130.9 + 98.2 + 98.2 + 32.7 = 360.0, and the table total row says 360.0."
+    },
+    {
+     "assertion": "Provides a two-column paste block",
+     "pass": true,
+     "reason": "It gives a tab-separated code block with a category and a value on each row."
+    },
+    {
+     "assertion": "Links the free chart tool",
+     "pass": true,
+     "reason": "It links the free editor at pie-chart-generator.com/percentage-pie-chart."
+    }
+   ],
+   "answer_chars": 1103
+  },
+  {
+   "id": 2,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Explains that rounding causes the 99 total",
+     "pass": true,
+     "reason": "States each slice is 33.33% and rounding every label to 33% totals 99%."
+    },
+    {
+     "assertion": "Offers a fix such as one decimal place, a footnote, or the largest remainder method",
+     "pass": true,
+     "reason": "Offers the largest remainder method, a footnote, and one decimal place (33.3/33.3/33.4)."
+    },
+    {
+     "assertion": "Does not change the underlying values",
+     "pass": true,
+     "reason": "Underlying values stay 1/1/1 and slices stay at 120\u00b0. Only the display labels are adjusted, and the answer says so."
+    },
+    {
+     "assertion": "Mentions that the degrees are 120 each",
+     "pass": true,
+     "reason": "The table shows 120.0\u00b0 for each slice and the text says the slices stay identical at 120\u00b0 each."
+    }
+   ],
+   "answer_chars": 1632
+  }
+ ]
+}

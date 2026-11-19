@@ -1,0 +1,29 @@
+{
+  "skill_name": "choose-the-right-chart",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "I have our monthly expenses: rent 1200, food 450, transport 150, fun 200. Pie chart or bar chart?",
+      "expected_output": "Recommends a pie or doughnut because the four values are parts of one whole with few slices, with one reason, and rejects the bar with one line. Hands off to a sibling skill.",
+      "assertions": [
+        "Gives one recommended chart type, not a menu",
+        "States the reason using the parts-of-a-whole shape or the slice count",
+        "Mentions at least one rejected alternative with a reason",
+        "Names a sibling skill such as make-a-pie-chart-with-percentages as the next step"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I want a pie chart of website visits by month for the whole year, 12 months.",
+      "expected_output": "Rejects the pie: months are a time series and 12 slices is too many. Recommends a line or bar. Explains.",
+      "assertions": [
+        "Rejects a pie chart",
+        "Says the data is over time or has too many slices",
+        "Recommends a line graph or a bar chart",
+        "Does not recommend a 3D chart"
+      ],
+      "files": []
+    }
+  ]
+}

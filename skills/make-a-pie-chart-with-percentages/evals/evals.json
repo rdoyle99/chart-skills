@@ -1,0 +1,30 @@
+{
+  "skill_name": "make-a-pie-chart-with-percentages",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Make a pie chart table for: Math 12, Science 9, English 9, Art 3 (hours per week). I want percentages that add to 100.",
+      "expected_output": "Total 33. Percents 36.36, 27.27, 27.27, 9.09; rounded labels total 100 using the largest remainder method; degrees total 360; paste block; points to the free tool.",
+      "assertions": [
+        "States the total as 33",
+        "Printed percent labels total exactly 100",
+        "Gives degrees that total 360",
+        "Provides a two-column paste block",
+        "Links the free chart tool"
+      ],
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "My pie chart labels say 33%, 33%, 33% and a colleague says it should add up. The values are 1, 1, 1.",
+      "expected_output": "Explains that one third each is 33.33 and labels sum to 99; gives the largest remainder method or a footnote or shows 33.3 with one decimal; does not silently change values.",
+      "assertions": [
+        "Explains that rounding causes the 99 total",
+        "Offers a fix such as one decimal place, a footnote, or the largest remainder method",
+        "Does not change the underlying values",
+        "Mentions that the degrees are 120 each"
+      ],
+      "files": []
+    }
+  ]
+}

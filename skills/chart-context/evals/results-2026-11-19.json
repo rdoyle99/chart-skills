@@ -1,0 +1,64 @@
+{
+ "skill": "chart-context",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 0.875,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Shows the contents of .agents/charts.md following the template sections",
+     "pass": true,
+     "reason": "It shows the file contents in a markdown block with structured sections (Purpose, Audience, Where it shows up, Data, Style rules, Constraints, Open questions), consistent with a template. It says it did not write the file, but the contents are shown."
+    },
+    {
+     "assertion": "States the purpose as a board slide in one short line",
+     "pass": true,
+     "reason": "The Purpose section is one line, 'Show the board how our team's quarterly budget splits across categories', and ties the chart to a board slide."
+    },
+    {
+     "assertion": "Marks unknown fields such as data source date or brand colors as unknown or as questions instead of inventing them",
+     "pass": true,
+     "reason": "The source date, brand colors, font, colorblind needs, print use and tool are all marked unknown or 'none given yet', and open questions are listed. It does state a deadline of about 2026-11-26 and a 1920x1080 size, but these are labeled as assumed or approximate."
+    },
+    {
+     "assertion": "Does not copy raw numbers into the file; it points at a source",
+     "pass": true,
+     "reason": "The file contains no budget figures. The Data section points to the 'team quarterly budget' source, which is not yet named."
+    }
+   ],
+   "answer_chars": 2213
+  },
+  {
+   "id": 2,
+   "passed": 3,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Stores both hex codes exactly",
+     "pass": true,
+     "reason": "The brief lists Brand colors: #1F4E79, #F2A900, and both codes are given in full."
+    },
+    {
+     "assertion": "Records black-and-white printing as a style rule",
+     "pass": true,
+     "reason": "Under Style rules the brief has 'Printed in black and white: yes'."
+    },
+    {
+     "assertion": "Says that slices need more than color to be told apart in grayscale or points to pick-chart-colors",
+     "pass": true,
+     "reason": "The print note says not to rely on color alone and suggests direct labels, patterns or line styles, plus a grayscale test print. It doesn't say 'slices' or name pick-chart-colors, but it does make the grayscale point."
+    },
+    {
+     "assertion": "Names a sibling skill as the next step",
+     "pass": false,
+     "reason": "The answer names no other skill. Its next-step advice is to answer the audience and paper-size questions."
+    }
+   ],
+   "answer_chars": 1883
+  }
+ ]
+}

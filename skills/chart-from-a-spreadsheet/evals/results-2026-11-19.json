@@ -1,0 +1,64 @@
+{
+ "skill": "chart-from-a-spreadsheet",
+ "date": "2026-11-19",
+ "model": "sonnet",
+ "pass_rate": 1.0,
+ "cases": [
+  {
+   "id": 1,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Tells the user to exclude the Total row from the chart range",
+     "pass": true,
+     "reason": "It says to keep the Total row out, to delete it after checking the sum, and to give a range (A1:B7) that stops before the old Total row."
+    },
+    {
+     "assertion": "Tells the user to remove blank rows",
+     "pass": true,
+     "reason": "It says to right-click the blank row's number and choose Delete row."
+    },
+    {
+     "assertion": "Gives Google Sheets menu steps",
+     "pass": true,
+     "reason": "It gives numbered steps: Insert, Chart, set the Chart type to Pie chart, then Customize, Pie chart."
+    },
+    {
+     "assertion": "Mentions showing the slice label as percentage",
+     "pass": true,
+     "reason": "Step 4 says to set Slice label to Percentage under Customize, Pie chart."
+    }
+   ],
+   "answer_chars": 2257
+  },
+  {
+   "id": 2,
+   "passed": 4,
+   "of": 4,
+   "verdicts": [
+    {
+     "assertion": "Output numbers have no dollar signs or commas",
+     "pass": true,
+     "reason": "The cleaned block shows 1200, 450, 200 with no $ or commas. The prose mentions 1,850, but that is outside the block."
+    },
+    {
+     "assertion": "Output is two tab-separated columns",
+     "pass": true,
+     "reason": "The block has Category and Amount columns, separated by tabs, across four rows."
+    },
+    {
+     "assertion": "Links a free chart tool page",
+     "pass": true,
+     "reason": "It links https://www.pie-chart-generator.com/?ref=chart-skills and labels it a free paste-in editor."
+    },
+    {
+     "assertion": "States that percents will be calculated from the total",
+     "pass": true,
+     "reason": "It says the values add up to 1,850 and gives each item's percent of that total (64.9%, 24.3%, 10.8%). It also says the percentages come from parts of one whole."
+    }
+   ],
+   "answer_chars": 1247
+  }
+ ]
+}
