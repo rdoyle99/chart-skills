@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-07-09/server.schema.json",
+  "name": "com.pie-chart-generator/pie-chart",
+  "description": "Render pie, doughnut, and bar charts from numbers or messy text; returns exact percentages, angles, SVG image URL, and interactive .pptx/SVG/PDF editor link.",
+  "version": "1.0.0",
+  "homepage": "https://www.pie-chart-generator.com",
+  "repository": {
+    "url": "https://github.com/rdoyle99/chart-skills",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://www.pie-chart-generator.com/api/mcp"
+    }
+  ]
+}

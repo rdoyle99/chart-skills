@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chart Skills &amp; MCP Server for AI Agents — Pie Chart Generator</title>
+  <meta name="description" content="Open-source agent skills and stateless Remote MCP server for building pie, donut, bar, and line charts with verified slice math and slide-ready exports.">
+  <style>
+    body { font-family: system-ui, -apple-system, sans-serif; max-width: 760px; margin: 48px auto; padding: 0 20px; line-height: 1.65; color: #0f172a; }
+    h1 { font-size: 2rem; line-height: 1.2; margin-bottom: 0.5rem; }
+    h2 { margin-top: 2rem; font-size: 1.3rem; }
+    code, pre { background: #f1f5f9; border-radius: 6px; font-size: 0.9rem; }
+    code { padding: 2px 6px; }
+    pre { padding: 14px; overflow-x: auto; }
+    a { color: #c2410c; font-weight: 500; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; margin-top: 16px; }
+    .card { border: 1px solid #e2e8f0; border-radius: 10px; padding: 14px; }
+  </style>
+</head>
+<body>
+  <h1>Chart Skills &amp; Remote MCP Server</h1>
+  <p>Open-source skills and a zero-auth Model Context Protocol (MCP) server for Claude Code, Cursor, Codex, and AI assistants, powered by <a href="https://www.pie-chart-generator.com/">Pie Chart Generator</a>.</p>
+  <h2>Connect the Remote MCP Server</h2>
+  <pre>{
+  "mcpServers": {
+    "pie-chart-generator": {
+      "type": "http",
+      "url": "https://www.pie-chart-generator.com/api/mcp"
+    }
+  }
+}</pre>
+  <h2>Install the 10 Agent Skills</h2>
+  <pre>npx skills add rdoyle99/chart-skills</pre>
+  <h2>Web Tools &amp; First-Party Research</h2>
+  <div class="cards">
+    <div class="card"><a href="https://www.pie-chart-generator.com/">Pie Chart Maker</a><br><small>Smart Paste, percentages on slices, PNG &amp; .pptx slide export</small></div>
+    <div class="card"><a href="https://www.pie-chart-generator.com/bar-chart-maker">Bar Chart Maker</a><br><small>Instant categorical bar graphs</small></div>
+    <div class="card"><a href="https://www.pie-chart-generator.com/line-graph-maker">Line Graph Maker</a><br><small>Time-series &amp; trend line graphs</small></div>
+    <div class="card"><a href="https://www.pie-chart-generator.com/percentage-pie-chart">Percentage Pie Chart</a><br><small>Auto-calculated % and degree breakdowns</small></div>
+    <div class="card"><a href="https://www.pie-chart-generator.com/pie-chart-statistics">Pie Chart Statistics</a><br><small>65 sourced studies + usage data from 20,000+ exported charts</small></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pie-chart-generator": {
+      "type": "http",
+      "url": "https://www.pie-chart-generator.com/api/mcp"
+    }
+  }
+}
